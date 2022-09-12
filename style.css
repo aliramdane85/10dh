@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(238, 235, 235);
+}
+.parent {
+    width: 302px;
+    height: 302px;
+    margin: 50px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s;
+    box-shadow: 10px 0px 80px 10px rgb(201, 200, 200);
+    border-radius: 50%;
+}
+.parent:hover{
+    transform: rotateY(180deg);
+    
+}
+.face {
+    
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: azure;
+    position: absolute;
+
+}
+.face1{
+    background-image: url(imag/10dh_face1.1\ copy.png);
+    z-index: 2;
+    
+}
+
+.face2 {
+    background-image: url(imag/10dh_face2.png);
+    transform: rotateY(180deg);
+    z-index: 1;
+}
