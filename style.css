@@ -35,7 +35,23 @@ nav{
     border-radius: 50%;
     cursor: pointer;
     padding-bottom: 30px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
     
+}
+@keyframes move {
+    0% {
+        transform: rotateY(0deg)
+    }
+    50% {
+        transform: rotateY(180deg)
+
+    }
+    100% {
+        transform: rotateY(0deg)
+    }
 }
 .parent:active {
     transform: rotateY(180deg);
